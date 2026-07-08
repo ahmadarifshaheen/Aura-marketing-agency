@@ -262,7 +262,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: var(--color-bg-dark);
-    padding: 120px 0 60px;
+    padding: 120px 0 140px;
     z-index: 1;
 }
 
@@ -404,13 +404,13 @@ a {
 
 .hero-scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 28px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     opacity: 0.6;
     animation: floatIndicator 2.5s infinite;
 }
@@ -1746,10 +1746,19 @@ a {
     .hero-subheadline {
         font-size: 1.1rem;
     }
+
+    .hero-section {
+        padding: 110px 0 120px;
+    }
     
     .hero-ctas {
         flex-direction: column;
         width: 100%;
+    }
+
+    .hero-scroll-indicator {
+        bottom: 18px;
+        gap: 10px;
     }
     
     .cta-primary-btn, 
