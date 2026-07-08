@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aura Marketing Agency is a premium digital marketing and business technology agency. We scale brands through high-performance branding, SEO, social media, paid ads, web development, and marketing automation.">
+    <meta name="keywords" content="digital marketing agency, marketing automation, branding, web development, SEO, social media management, paid ads, business technology solutions, Aura Marketing">
+    <meta name="author" content="Aura Marketing Agency">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auramarketing.agency/">
+    <meta property="og:title" content="Aura Marketing Agency | Strategy. Technology. Growth.">
+    <meta property="og:description" content="Empowering brands through data-driven digital marketing, stunning branding, high-performance web development, and intelligent technology solutions.">
+    <meta property="og:image" content="assets/portfolio_web.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Aura Marketing Agency | Strategy. Technology. Growth.">
+    <meta property="twitter:description" content="Empowering brands through data-driven digital marketing, stunning branding, high-performance web development, and intelligent technology solutions.">
+    <meta property="twitter:image" content="assets/portfolio_web.png">
+
+    <title>Aura Marketing Agency | Strategy. Technology. Growth.</title>
+
+    <!-- Fonts: Poppins (Headers) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>A</text></svg>">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" id="nav-logo-link">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" stroke="url(#logo-grad)" stroke-width="8"/>
+                        <path d="M35 65L50 35L65 65" stroke="url(#logo-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logo-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#0052ff"/>
+                                <stop offset="1" stop-color="#06b6d4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </span>
+                <span class="logo-text">AURA</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu-bar">
+                <a href="#home" class="nav-link active" id="link-home">Home</a>
+                <a href="#about" class="nav-link" id="link-about">About Us</a>
+                <a href="#services" class="nav-link" id="link-services">Services</a>
+                <a href="#why-choose-us" class="nav-link" id="link-why-choose">Why Us</a>
+                <a href="#portfolio" class="nav-link" id="link-portfolio">Portfolio</a>
+                <a href="#testimonials" class="nav-link" id="link-testimonials">Reviews</a>
+                <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+                <a href="#contact" class="nav-btn" id="nav-cta-btn">Free Consultation</a>
+            </nav>
+
+            <button class="burger-menu" id="burger-menu-btn" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <canvas id="particle-canvas" class="hero-canvas"></canvas>
+            <div class="hero-glow-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content scroll-reveal fade-up">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Next-Gen Digital & Tech Agency
+                    </div>
+                    <h1 class="hero-headline">Empowering Brands Through <span class="text-gradient">Strategy & Technology</span></h1>
+                    <p class="hero-subheadline">We help businesses grow with digital marketing, branding, social media management, SEO, and technology-driven solutions.</p>
+                    <!-- <div class="hero-ctas">
+                        <a href="#contact" class="cta-primary-btn" id="hero-cta-consult">
+                            Get a Free Consultation
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#services" class="cta-secondary-btn" id="hero-cta-services">View Our Services</a>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <span class="mouse-icon">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll to Explore</span>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-content scroll-reveal fade-right">
+                        <div class="section-badge">Who We Are</div>
+                        <h2 class="section-title">Bridging Creativity, Data, and Technology</h2>
+                        <p class="about-desc">At Aura Marketing Agency, we combine award-winning creative thinking with robust data analytics and cutting-edge software development. We don't believe in one-size-fits-all campaigns. We build custom, sustainable growth ecosystems tailored to the unique goals of startups and established brands alike.</p>
+                        <p class="about-desc">Our integrated team of market strategists, developers, and designers works collaboratively to optimize your sales funnel, scale customer acquisition, and design beautiful digital experiences that convert.</p>
+                        
+                        <div class="about-features">
+                            <div class="about-feature-item">
+                                <span class="feature-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                </span>
+                                <div>
+                                    <h4 class="feature-title">Tailored Execution</h4>
+                                    <p class="feature-text">Custom strategies built specifically around your core audience.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature-item">
+                                <span class="feature-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                </span>
+                                <div>
+                                    <h4 class="feature-title">Tech-First Framework</h4>
+                                    <p class="feature-text">Automated analytics, cloud integrations, and robust web tooling.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats-container scroll-reveal fade-left">
+                        <div class="stats-glass-card">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="95">0</div>
+                                    <div class="stat-symbol">%</div>
+                                    <div class="stat-label">Client Retention</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="250">0</div>
+                                    <div class="stat-symbol">+</div>
+                                    <div class="stat-label">Projects Launched</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="350">0</div>
+                                    <div class="stat-symbol">%</div>
+                                    <div class="stat-label">Average Campaign ROI</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="15">0</div>
+                                    <div class="stat-symbol">M+</div>
+                                    <div class="stat-label">Ad Budget Managed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <div class="section-badge">Our Services</div>
+                    <h2 class="section-title text-center">Comprehensive Solutions for Digital Domination</h2>
+                    <p class="section-subtitle text-center">We deploy multi-channel solutions combining high-converting marketing frameworks with robust technological execution.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Digital Marketing -->
+                    <div class="service-card scroll-reveal fade-up" id="service-digital-marketing">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Digital Marketing</h3>
+                        <p class="service-description">Performance campaigns driven by audience profiling and real-time market data to elevate brand presence.</p>
+                    </div>
+
+                    <!-- Service 2: Social Media Management -->
+                    <div class="service-card scroll-reveal fade-up" id="service-social-media">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Social Media Management</h3>
+                        <p class="service-description">Content planning, community engagement, growth scheduling, and high-impact social campaigns across channels.</p>
+                    </div>
+
+                    <!-- Service 3: Branding & Identity -->
+                    <div class="service-card scroll-reveal fade-up" id="service-branding">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Branding & Identity</h3>
+                        <p class="service-description">Visual architecture, guidelines, logos, and high-fidelity typography that define how your business communicates.</p>
+                    </div>
+
+                    <!-- Service 4: SEO & Analytics -->
+                    <div class="service-card scroll-reveal fade-up" id="service-seo">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">SEO & Analytics</h3>
+                        <p class="service-description">Intensive crawl optimization, search architecture audit, keywords, and dashboards linking analytics to sales.</p>
+                    </div>
+
+                    <!-- Service 5: Content Creation -->
+                    <div class="service-card scroll-reveal fade-up" id="service-content">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20h9"></path>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Content Creation</h3>
+                        <p class="service-description">Sleek visual graphic designs, video storytelling assets, and copy written to evoke emotion and spark action.</p>
+                    </div>
+
+                    <!-- Service 6: Paid Advertising -->
+                    <div class="service-card scroll-reveal fade-up" id="service-ads">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Paid Advertising</h3>
+                        <p class="service-description">Target-focused, highly structured campaigns across Google, Meta, and LinkedIn with a focus on acquisition cost.</p>
+                    </div>
+
+                    <!-- Service 7: Website Development -->
+                    <div class="service-card scroll-reveal fade-up" id="service-webdev">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Website Development</h3>
+                        <p class="service-description">High-performance, secure web applications featuring glassmorphic interfaces and blazing fast speeds.</p>
+                    </div>
+
+                    <!-- Service 8: Marketing Automation -->
+                    <div class="service-card scroll-reveal fade-up" id="service-automation">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Marketing Automation</h3>
+                        <p class="service-description">Custom logic flows for lead nurturing, dynamic customer journeys, and automated API-based CRM tooling.</p>
+                    </div>
+
+                    <!-- Service 9: Business Technology Solutions -->
+                    <div class="service-card scroll-reveal fade-up" id="service-solutions">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Business Technology Solutions</h3>
+                        <p class="service-description">Deploying custom API systems, workflow automations, and tech stack integrations that secure data and cut waste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us-section" id="why-choose-us">
+            <div class="container">
+                <div class="why-us-grid">
+                    <div class="why-us-visual scroll-reveal fade-right">
+                        <div class="glow-container">
+                            <div class="interactive-glow-sphere"></div>
+                            <div class="tech-card-showcase">
+                                <div class="glass-feature-pill">
+                                    <span class="pill-dot blue"></span> Data-Driven Strategy
+                                </div>
+                                <div class="glass-feature-pill delay-1">
+                                    <span class="pill-dot cyan"></span> Creative Masterclass
+                                </div>
+                                <div class="glass-feature-pill delay-2">
+                                    <span class="pill-dot silver"></span> Automated Success
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-us-content scroll-reveal fade-left">
+                        <div class="section-badge">Why Choose Us</div>
+                        <h2 class="section-title">The Engine Behind Your Digital Acceleration</h2>
+                        <p class="why-us-subtitle">We build premium, scalable solutions where modern design meets rock-solid engineering code to ensure your bottom-line metrics grow.</p>
+
+                        <div class="why-us-points">
+                            <div class="why-point">
+                                <div class="point-header">
+                                    <span class="point-num">01</span>
+                                    <h4 class="point-title">Data-Driven Strategies</h4>
+                                </div>
+                                <p class="point-desc">We leave guesswork out of the formula. Campaigns are calculated and tracked using metrics and behavioral analysis.</p>
+                            </div>
+
+                            <div class="why-point">
+                                <div class="point-header">
+                                    <span class="point-num">02</span>
+                                    <h4 class="point-title">Creative Excellence</h4>
+                                </div>
+                                <p class="point-desc">Designs and branding that demand attention, build credibility, and instantly position your brand as a market leader.</p>
+                            </div>
+
+                            <div class="why-point">
+                                <div class="point-header">
+                                    <span class="point-num">03</span>
+                                    <h4 class="point-title">Transparent Communication</h4>
+                                </div>
+                                <p class="point-desc">Get regular, visual dashboards and open lines with engineers and managers. No agency secrets, just progress.</p>
+                            </div>
+
+                            <div class="why-point">
+                                <div class="point-header">
+                                    <span class="point-num">04</span>
+                                    <h4 class="point-title">Measurable Results</h4>
+                                </div>
+                                <p class="point-desc">We optimize for core conversions: sales, inquiries, and customer lifetime value, rather than vanity metrics.</p>
+                            </div>
+
+                            <div class="why-point">
+                                <div class="point-header">
+                                    <span class="point-num">05</span>
+                                    <h4 class="point-title">Innovative Technology Solutions</h4>
+                                </div>
+                                <p class="point-desc">We write customized automation scripts, APIs, and modern code to keep your business operating 24/7 without overhead.</p>
+                            </div>
+
+                            <div class="why-point">
+                                <div class="point-header">
+                                    <span class="point-num">06</span>
+                                    <h4 class="point-title">Dedicated Client Support</h4>
+                                </div>
+                                <p class="point-desc">Enjoy full support. We treat your growth campaign as our own, maintaining high availability for urgent strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <div class="section-badge">Case Studies</div>
+                    <h2 class="section-title text-center">Projects Built for Infinite Scale</h2>
+                    <p class="section-subtitle text-center">Take a look at how we utilize design, media, and development to scale companies around the globe.</p>
+                </div>
+
+                <div class="portfolio-filters scroll-reveal fade-up" id="portfolio-filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="marketing">Marketing</button>
+                    <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+                    <button class="filter-btn" data-filter="tech-solutions">Tech Solutions</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-items-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item scroll-reveal fade-up" data-category="tech-solutions">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/portfolio_digital.png" alt="Apex Analytics Dashboard Visual" loading="lazy">
+                            <div class="portfolio-hover-overlay">
+                                <span class="view-project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <span class="project-category">Tech Solutions</span>
+                            <h3 class="project-title">Apex Analytics Dashboard</h3>
+                            <p class="project-description">Telemetry systems compiling millions of metrics into readable reports for global logistics.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-item scroll-reveal fade-up" data-category="web-dev">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/portfolio_web.png" alt="Vanguard E-Commerce Storefront Mockup" loading="lazy">
+                            <div class="portfolio-hover-overlay">
+                                <span class="view-project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <span class="project-category">Web Dev</span>
+                            <h3 class="project-title">Vanguard E-Commerce</h3>
+                            <p class="project-description">Sub-second loading times for high-volume transactions with dynamic search mechanisms.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-item scroll-reveal fade-up" data-category="branding">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/portfolio_brand.png" alt="Pulse Brand Campaign Design Showcase" loading="lazy">
+                            <div class="portfolio-hover-overlay">
+                                <span class="view-project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <span class="project-category">Branding</span>
+                            <h3 class="project-title">Pulse Brand Campaign</h3>
+                            <p class="project-description">A total brand redesign and typography layout for a high-growth SaaS platform.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-item scroll-reveal fade-up" data-category="marketing">
+                        <div class="portfolio-img-wrapper">
+                            <img src="assets/portfolio_social.png" alt="Solis Omnichannel Marketing Strategy Graphic" loading="lazy">
+                            <div class="portfolio-hover-overlay">
+                                <span class="view-project-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="portfolio-details">
+                            <span class="project-category">Marketing</span>
+                            <h3 class="project-title">Solis Growth Initiative</h3>
+                            <p class="project-description">Scalable social media ads and content funnel triggering a 420% increase in active subscriptions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header scroll-reveal fade-up">
+                    <div class="section-badge">Testimonials</div>
+                    <h2 class="section-title text-center">Trusted by Industry Innovators</h2>
+                    <p class="section-subtitle text-center">Don't just take our word for it—see what corporate founders and executives say about our results.</p>
+                </div>
+
+                <div class="testimonials-slider-container scroll-reveal fade-up">
+                    <div class="testimonials-track" id="testimonial-track-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card active">
+                            <div class="quote-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/></svg>
+                            </div>
+                            <p class="testimonial-text">"Aura transformed our digital presence completely. Their integration of marketing data and custom web development helped us secure our Series A. Their engineers and strategists are highly talented."</p>
+                            <div class="client-info">
+                                <img src="assets/client_ceo.png" alt="Sarah Jenkins Headshot" class="client-avatar">
+                                <div class="client-details">
+                                    <h5 class="client-name">Sarah Jenkins</h5>
+                                    <span class="client-title">CEO, Finflow</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/></svg>
+                            </div>
+                            <p class="testimonial-text">"The team at Aura doesn't just run advertising ads; they engineer scalable growth systems. Their cloud solutions coupled with branding alignment make them a powerhouse agency partner."</p>
+                            <div class="client-info">
+                                <img src="assets/client_founder.png" alt="David Chen Headshot" class="client-avatar">
+                                <div class="client-details">
+                                    <h5 class="client-name">David Chen</h5>
+                                    <span class="client-title">Founder, Nebula Systems</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="quote-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.154c-2.433.914-3.996 3.638-3.996 5.849h3.999v10h-9.999z"/></svg>
+                            </div>
+                            <p class="testimonial-text">"Working with Aura has been a true game-changer. Our organic traffic increased by 180% in six months, and our paid advertising CAC has dropped significantly. We love their dashboard reporting."</p>
+                            <div class="client-info">
+                                <div class="client-avatar-initials">ER</div>
+                                <div class="client-details">
+                                    <h5 class="client-name">Elena Rostova</h5>
+                                    <span class="client-title">Marketing Director, Lumina Retail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="testimonial-prev-arrow" aria-label="Previous Testimonial">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <div class="slider-dots" id="testimonial-dots-indicator">
+                            <span class="slider-dot active" data-index="0"></span>
+                            <span class="slider-dot" data-index="1"></span>
+                            <span class="slider-dot" data-index="2"></span>
+                        </div>
+                        <button class="slider-btn next-btn" id="testimonial-next-arrow" aria-label="Next Testimonial">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-panel scroll-reveal fade-right">
+                        <div class="section-badge">Get in Touch</div>
+                        <h2 class="section-title">Let's Design Your Growth Plan</h2>
+                        <p class="contact-intro">Have a project in mind or want a free audit of your current digital setup? Fill out the form or drop us an email. Let's grow together.</p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Email Us</span>
+                                    <a href="mailto:ahmadarifshaheen@gmail.com" class="detail-value">ahmadarifshaheen@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Call/WhatsApp</span>
+                                    <a href="https://wa.me/923290113878" target="_blank" rel="noopener noreferrer" class="detail-value">+92 329 0113878</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Headquarters</span>
+                                    <span class="detail-value">Level 14, Zenith Corporate Towers, Tech District</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                </div>
+                                <div class="detail-text">
+                                    <span class="detail-label">Facebook Profile</span>
+                                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="detail-value">Aura Marketing Agency</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini map integration -->
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115681.295927357!2d67.01899173516086!3d24.86074026574768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06602d4ca7%3A0xad2c8a2cd6cc84d8!2sClifton%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719940000000!5m2!1sen!2s" 
+                                width="100%" 
+                                height="220" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                aria-label="Aura Marketing Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel scroll-reveal fade-left">
+                        <div class="glass-form-card">
+                            <h3 class="form-title">Consultation Request</h3>
+                            <p class="form-subtitle">Fill in the fields below and our strategist will reach out within 2 hours.</p>
+                            
+                            <form id="agency-contact-form" novalidate>
+                                <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-name">Full Name</label>
+                                        <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                                        <span class="error-msg" id="name-error">Please enter your name</span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="contact-email">Email Address</label>
+                                        <input type="email" id="contact-email" name="email" placeholder="john@company.com" required>
+                                        <span class="error-msg" id="email-error">Please enter a valid email</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-phone">Phone Number</label>
+                                        <input type="tel" id="contact-phone" name="phone" placeholder="+92 300 1234567" required>
+                                        <span class="error-msg" id="phone-error">Please enter your phone number</span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="contact-company">Company Name (Optional)</label>
+                                        <input type="text" id="contact-company" name="company" placeholder="e.g. Solis Digital">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-service">Service Required</label>
+                                    <select id="contact-service" name="service" required>
+                                        <option value="" disabled selected>Select a Service</option>
+                                        <option value="digital-marketing">Digital Marketing</option>
+                                        <option value="social-media">Social Media Management</option>
+                                        <option value="branding">Branding & Identity</option>
+                                        <option value="seo">SEO & Analytics</option>
+                                        <option value="content">Content Creation</option>
+                                        <option value="ads">Paid Advertising</option>
+                                        <option value="webdev">Website Development</option>
+                                        <option value="automation">Marketing Automation</option>
+                                        <option value="tech-solutions">Business Tech Solutions</option>
+                                    </select>
+                                    <span class="error-msg" id="service-error">Please select a service</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contact-message">Project Message</label>
+                                    <textarea id="contact-message" name="message" rows="4" placeholder="Describe your budget, goals, or current issues..." required></textarea>
+                                    <span class="error-msg" id="message-error">Please enter your project message</span>
+                                </div>
+
+                                <button type="submit" class="submit-btn" id="contact-submit-btn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loader"></span>
+                                </button>
+                            </form>
+                            
+                            <!-- Success notification box -->
+                            <div class="form-success-box" id="form-success-alert">
+                                <div class="success-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
+                                <h4 class="success-title">Thank you!</h4>
+                                <p class="success-desc">Your message has been sent successfully. Our team will contact you soon.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" stroke="url(#footer-logo-grad)" stroke-width="8"/>
+                                <path d="M35 65L50 35L65 65" stroke="url(#footer-logo-grad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                    <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#0052ff"/>
+                                        <stop offset="1" stop-color="#06b6d4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="logo-text">AURA</span>
+                    </a>
+                    <p class="footer-about-text">Bridging high-performance data-driven marketing with cutting-edge software solutions to scale your startup or enterprise.</p>
+                    <p class="footer-tagline">Strategy. Technology. Growth.</p>
+                    <div class="footer-social-links">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Aura LinkedIn" id="social-linkedin">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Aura Twitter" id="social-twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Aura Instagram" id="social-instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Aura Facebook" id="social-facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#why-choose-us">Why Us</a></li>
+                        <li><a href="#portfolio">Our Portfolio</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="footer-col-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#services">Social Media Management</a></li>
+                        <li><a href="#services">Branding & Identity</a></li>
+                        <li><a href="#services">SEO & Analytics</a></li>
+                        <li><a href="#services">Content Creation</a></li>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Marketing Automation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 Aura Marketing Agency. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#home">Privacy Policy</a>
+                    <a href="#home">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating WhatsApp Widget -->
+    <a href="https://wa.me/923290113878" class="whatsapp-floating-badge" id="whatsapp-floating-widget" target="_blank" rel="noopener noreferrer" aria-label="Chat with Us on WhatsApp">
+        <span class="whatsapp-text">Chat with Us on WhatsApp</span>
+        <span class="whatsapp-icon-container">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            <span class="whatsapp-notification-badge"></span>
+        </span>
+    </a>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
